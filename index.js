@@ -10,7 +10,7 @@ app.get('/kopac/:name/:from', function (req, res) {
 });
 
 app.get('/patent/:name/:count/:from', function (req, res) {
-  res.send(req.params.name+" mám "+req.params.name+" amerických patentů. <br>-"+req.params.from);
+  res.send(req.params.name+" mám "+req.params.count+" amerických patentů. <br>-"+req.params.from);
 });
 
 app.listen(3000, function () {
